@@ -3,9 +3,9 @@ let mySide;                // defining spacing of hexagons
 let numberOfHexagonsDown;  // defining hexagons down the page
 
 function setup() {
-  createCanvas(400, 400);
-  numberOfHexagonsAcross = 20;
-  numberOfHexagonsDown = 22; 
+  createCanvas(800, 800);
+  numberOfHexagonsAcross = 18;
+  numberOfHexagonsDown = 20; 
 }
 
 function draw() {
@@ -14,7 +14,7 @@ function draw() {
   
   
   for(let j=0; j < numberOfHexagonsDown; j++){
-    drawLineOfHexagons(j*60, mySide);
+    drawLineOfHexagons(j*90, mySide);
   }
 }
 
@@ -24,12 +24,12 @@ function drawLineOfHexagons(yPosition, sideSize){
   }
 }
 
-function drawHexagon(centreX, centreY, sideLength){
+function drawHexagon(centreX, centreY, sideLength){ 
 
-  polygon(centreX, centreY, sideLength, 6);
+  polygon(centreX, centreY, sideLength, 6);    //drew hexagon (6 sides)
 }
 
-function polygon(x, y, radius, npoints) {
+function polygon(x, y, radius, npoints) {   
   let angle = TWO_PI / npoints;
   beginShape();
   for (let a = 0; a < TWO_PI; a += angle) {
