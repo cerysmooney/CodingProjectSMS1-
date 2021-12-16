@@ -14,7 +14,7 @@ function draw() {
   
   
   for(let j=0; j < numberOfHexagonsDown; j++){
-    drawLineOfHexagons(j*90, mySide);
+    drawLineOfHexagons(j*90, mySide); // drew line, which helps the spacing of hexs
   }
 }
 
